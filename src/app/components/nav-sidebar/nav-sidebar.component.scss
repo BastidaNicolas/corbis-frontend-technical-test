@@ -1,0 +1,44 @@
+.logo-container{
+    padding: 1.359rem 0.629rem 1.238rem 0.701rem;
+    margin: 0;
+    background-color: #FF6537;
+}
+.logo{
+    width: 2.421rem;
+    height: 1.778rem;
+}
+ul{
+    padding:0;
+    margin:0;
+}
+i{
+    color: #BEB9B5;
+    scale: 1.5;
+}
+li {
+    list-style: none;
+    height: 55px;
+    
+    button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        border: none;
+        background-color: transparent;
+        &:hover{
+            background-color: rgba($color: #000000, $alpha: .1);
+        }
+        &:focus{
+            background-color: #3D3935;
+            i{
+                color: #FF6537;
+            }
+        }
+        i{
+            scale: 1.3;
+        }
+    }
+}
