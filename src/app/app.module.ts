@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavSidebarComponent } from './components/nav-sidebar/nav-sidebar.component';
 import { HeaderComponent } from './components/header/header.component';
+import { RightSidebarComponent } from './components/right-sidebar/right-sidebar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavSidebarComponent,
-    HeaderComponent
+    HeaderComponent,
+    RightSidebarComponent
   ],
   imports: [
     BrowserModule,
