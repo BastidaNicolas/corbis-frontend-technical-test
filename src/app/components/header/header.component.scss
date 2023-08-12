@@ -57,12 +57,39 @@ h2{
     line-height: 30px;
     font-weight: bold;
 }
+.input-group{
+    max-width: 335.23px;
+    color: #D2D2D2;
+    span{
+        z-index: 10;
+        i{
+            width: 15px;
+            height: 15px;
+        }
+    }
+    .search-button{
+        right: 20px;
+        top: 3.5px;
+    }
+    .down-arrow{
+        left: 8px;
+        top: 2px;
+    }
+    &:focus{
+        color: black;
+    }
+}
 input{
     font-size: 12px;
+    border-radius: 0;
     line-height: 17px;
     color: #BEBEBE;
-    padding: 0px 50px 1px 25px;
+    padding: 0px 0px 1px 31.14px;
     margin-right: 10.41px;
+    max-width: 335.23px;
+    &:focus{
+        
+    }
 }
 .triangle {
     margin-left: 95%;
