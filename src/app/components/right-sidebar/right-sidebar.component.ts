@@ -4,7 +4,7 @@ import { ApiService } from 'src/app/api.service';
 @Component({
   selector: 'app-right-sidebar',
   templateUrl: './right-sidebar.component.html',
-  styleUrls: ['./right-sidebar.component.scss']
+  styleUrls: ['./right-sidebar.component.scss'],
 })
 export class RightSidebarComponent {
   comments = [];
@@ -13,9 +13,9 @@ export class RightSidebarComponent {
   get drawerStyles() {
     return {
       'max-width': this.openDrawer ? '367.25px' : '0',
-      'width': this.openDrawer ? '367.25px' : '0',
-      'left': this.openDrawer ? '0' : '-367.25px',
-      'transition': 'max-width 0.2s, width 0.2s, left 0.2s',
+      width: this.openDrawer ? '367.25px' : '0',
+      left: this.openDrawer ? '0' : '-367.25px',
+      transition: 'max-width 0.2s, width 0.2s, left 0.2s',
     };
   }
 
@@ -32,7 +32,7 @@ export class RightSidebarComponent {
       next: (data) => {
         // Handle the fetched data
         this.comments = data;
-        console.log(data)
+        console.log(data);
       },
       error: (error) => {
         // Handle errors
@@ -41,8 +41,7 @@ export class RightSidebarComponent {
     });
   }
 
-  toggleDrawer(){
+  toggleDrawer() {
     this.openDrawer = !this.openDrawer;
   }
-
 }

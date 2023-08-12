@@ -8,5 +8,4 @@ import { Component, Input } from '@angular/core';
 export class DrawerComponent {
   @Input() openDrawer: boolean = false;
   @Input() comments = [];
-
 }

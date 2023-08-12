@@ -11,17 +11,17 @@ interface Reply {
 @Component({
   selector: 'app-reply-card',
   templateUrl: './reply-card.component.html',
-  styleUrls: ['./reply-card.component.scss']
+  styleUrls: ['./reply-card.component.scss'],
 })
 export class ReplyCardComponent {
   @Input()
   reply!: Reply;
   datePipe = new DatePipe('en-US');
-  originalDate: string = "";
+  originalDate: string = '';
   formattedDate = this.datePipe.transform(this.originalDate, 'MMM. d, yyyy, h:mm a'); // This will hold the formatted date
 
   ngOnInit(): void {
-    this.originalDate =  this.reply.date;
+    this.originalDate = this.reply.date;
     this.formattedDate = this.datePipe.transform(this.originalDate, 'MMM. d, yyyy, h:mm a');
   }
 }

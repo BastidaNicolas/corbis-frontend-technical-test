@@ -8,7 +8,7 @@ describe('NavSidebarComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [NavSidebarComponent]
+      declarations: [NavSidebarComponent],
     });
     fixture = TestBed.createComponent(NavSidebarComponent);
     component = fixture.componentInstance;

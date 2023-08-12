@@ -1,14 +1,14 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable, catchError, map, tap } from 'rxjs';  
+import { Observable, catchError, map, tap } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ApiService {
-  private apiUrl = '/assets/data.json'; 
+  private apiUrl = '/assets/data.json';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   getComments(): Observable<any> {
     const url = `${this.apiUrl}`;
@@ -18,7 +18,7 @@ export class ApiService {
       }),
       catchError((error) => {
         console.error('Error fetching data:', error);
-        throw error; 
+        throw error;
       })
     );
   }
@@ -31,7 +31,7 @@ export class ApiService {
       }),
       catchError((error) => {
         console.error('Error fetching data:', error);
-        throw error; 
+        throw error;
       })
     );
   }
@@ -44,9 +44,8 @@ export class ApiService {
       }),
       catchError((error) => {
         console.error('Error fetching data:', error);
-        throw error; 
+        throw error;
       })
     );
   }
-
 }
