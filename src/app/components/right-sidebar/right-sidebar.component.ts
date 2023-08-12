@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ApiService } from 'src/app/api.service';
 
 @Component({
   selector: 'app-right-sidebar',
@@ -6,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./right-sidebar.component.scss']
 })
 export class RightSidebarComponent {
-
+  comments = [];
   openDrawer = false;
 
   get drawerStyles() {
@@ -18,7 +19,27 @@ export class RightSidebarComponent {
     };
   }
 
-  constructor(){}
+  constructor(private apiService: ApiService) {}
+
+  ngOnInit(): void {
+    // Call the API service methods here
+    this.fetchData();
+  }
+
+  fetchData(): void {
+    // Call the getData method from the ApiService
+    this.apiService.getComments().subscribe({
+      next: (data) => {
+        // Handle the fetched data
+        this.comments = data;
+        console.log(data)
+      },
+      error: (error) => {
+        // Handle errors
+        console.error('Error fetching data in component:', error);
+      },
+    });
+  }
 
   toggleDrawer(){
     this.openDrawer = !this.openDrawer;

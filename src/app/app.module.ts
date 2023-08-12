@@ -10,6 +10,7 @@ import { RightSidebarComponent } from './components/right-sidebar/right-sidebar.
 import { DrawerComponent } from './components/drawer/drawer.component';
 import { CommentCardComponent } from './components/comment-card/comment-card.component';
 import { ReplyCardComponent } from './components/reply-card/reply-card.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,12 +20,13 @@ import { ReplyCardComponent } from './components/reply-card/reply-card.component
     RightSidebarComponent,
     DrawerComponent,
     CommentCardComponent,
-    ReplyCardComponent
+    ReplyCardComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
