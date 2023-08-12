@@ -14,7 +14,7 @@ export class RightSidebarComponent {
       'max-width': this.openDrawer ? '367.25px' : '0',
       'width': this.openDrawer ? '367.25px' : '0',
       'left': this.openDrawer ? '0' : '-367.25px',
-      'transition': 'max-width 0.3s, width 0.3s, left 0.3s',
+      'transition': 'max-width 0.2s, width 0.2s, left 0.2s',
     };
   }
 
