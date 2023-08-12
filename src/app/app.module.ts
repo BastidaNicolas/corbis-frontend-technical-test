@@ -11,6 +11,8 @@ import { DrawerComponent } from './components/drawer/drawer.component';
 import { CommentCardComponent } from './components/comment-card/comment-card.component';
 import { ReplyCardComponent } from './components/reply-card/reply-card.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MainSectionComponent } from './components/section/main-section/main-section.component';
+import { TableComponent } from './components/table/table.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { HttpClientModule } from '@angular/common/http';
     DrawerComponent,
     CommentCardComponent,
     ReplyCardComponent,
+    MainSectionComponent,
+    TableComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, HttpClientModule],
   providers: [],
