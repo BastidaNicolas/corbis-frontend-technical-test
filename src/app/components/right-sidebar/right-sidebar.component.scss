@@ -40,8 +40,12 @@ i{
 }
 
 .button-selected{
-    background-color: #BBBBBB;
+    background-color: rgba($lightGray8, 33%);
     .chat-bubble{
-        border-color: #BBBBBB!important;
+        color: #E8E8E8;
+        border-color: #E8E8E8!important;
     }
+}
+.drawer-closed{
+    max-width: 43px;
 }

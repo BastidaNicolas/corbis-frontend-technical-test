@@ -12,13 +12,17 @@ $theme-colors: (
   "dark-text-3": $gray2,
 );
 
-$input-placeholder-color: #BEBEBE;
+$input-placeholder-color: $lightGray11;
+$border-color: $lightGray2;
 
 *{
     font-family: 'Open Sans', sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+html{
+    overflow-x: hidden;
 }
 
 input[type="text"], textarea {

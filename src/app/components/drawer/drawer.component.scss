@@ -1,0 +1,17 @@
+@import '../../../variables.scss';
+
+.comment-form{
+    input{
+        padding: 6.78px 0 6.22px 14.67px;
+        font-size: 12px;
+        line-height: 17px;
+        font-style: italic;
+    }
+    button{
+        font-size: 13px;
+        line-height: 18px;
+        color: $darkGray;
+        padding: 8.34px 16.5px 7.66px 16.5px;
+        border-color: $lightGray3;
+    }
+}
