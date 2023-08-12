@@ -1,3 +1,5 @@
+@import '../../../variables.scss';
+
 .logo-container{
     padding: 1.359rem 0.629rem 1.238rem 0.701rem;
     margin: 0;
@@ -11,7 +13,7 @@ ul{
     margin:0;
 }
 i{
-    color: #BEB9B5;
+    color: $lightGray7;
     scale: 1.5;
 }
 li {
@@ -31,9 +33,9 @@ li {
             background-color: rgba($color: #000000, $alpha: .1);
         }
         &:focus{
-            background-color: #3D3935;
+            background-color: $darkGray3;
             i{
-                color: #FF6537;
+                color: $orange;
             }
         }
         i{

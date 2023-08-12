@@ -1,5 +1,7 @@
+@import '../../../variables.scss';
+
 i{
-    color: #4C4743;
+    color: $darkBrown;
 }
 .comments-button{
     i::before{

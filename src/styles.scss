@@ -1,41 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-
-// Grayscale
-$white: #FFFFFF;
-$lightGray: #F1F1F1;
-$lightGray2: #CCCCCC;
-$gray: #999999;
-$darkGray: #515251;
-$darkGray2: #333333;
-$darkGray3: #3D3935;
-$lightGray7: #BEB9B5;
-$darkGray4: #707070;
-$darkGray5: #5D6164;
-$gray2: #646464;
-
-// Transparent
-$blackTransparent: #0000004D;
-$blackTransparent2: #00000066;
-$blackTransparent3: #00000059;
-$blackTransparent4: #00000024;
-$transparent: #00000000;
-
-// Colors
-$black: #000000;
-$orange: #FF6537;
-$darkBrown: #4C4743;
-$orange2: #EB4716;
-
-// Other Grays
-$lightGray3: #BABBBA;
-$lightGray4: #F5F5F5;
-$lightGray5: #E8E8E8;
-$lightGray6: #CCCBCB;
-$lightGray8: #BBBBBB;
-$lightGray9: #D2D2D2;
-$lightGray10: #F9F9F9;
-$lightGray11: #BEBEBE;
-$lightGray12: #E2E2E2;
+@import './variables.scss';
 
 $theme-colors: (
   "primary":    $white,
@@ -55,6 +19,12 @@ $input-placeholder-color: #BEBEBE;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+input[type="text"], textarea {
+    outline: none;
+    box-shadow:none !important;
+    border:1px solid #ccc !important;
 }
 
 /* Importing Bootstrap SCSS file. */
