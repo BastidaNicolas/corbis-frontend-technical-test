@@ -1,0 +1,43 @@
+@import '../../../../variables.scss';
+
+.btn-group{
+    margin-right: 15px;
+    .btn{
+        color: $white;
+        border-radius: 0;
+        font-size: 11px;
+        line-height: 15px;
+    }
+    .dropdown-toggle{
+        padding: 5px 8.28px 0 8.28px;
+        &::after{
+            font-size: 18px;
+        }
+    }
+    i{
+        &::before{
+            -webkit-text-stroke: 1.5px;
+        }
+    }
+}
+.search-container{
+    color: $lightGray2;
+    transition: color 0.2s;
+    width: 100%;
+    max-width: 207px;
+    .search-button{
+        font-size: 15px;
+        right: 8.1px;
+        top: 3.5px;
+    }
+    input{
+        font-size: 12px;
+        line-height: 17px;
+        padding: 6px 0px 5px 14.02px;
+        border-radius: 0;
+        width: 100%;
+    }
+    &:focus-within{
+        color: $darkBrown;
+    }
+}
