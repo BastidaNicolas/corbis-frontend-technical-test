@@ -22,20 +22,15 @@ export class RightSidebarComponent {
   constructor(private apiService: ApiService) {}
 
   ngOnInit(): void {
-    // Call the API service methods here
     this.fetchData();
   }
 
   fetchData(): void {
-    // Call the getData method from the ApiService
     this.apiService.getComments().subscribe({
       next: (data) => {
-        // Handle the fetched data
         this.comments = data;
-        console.log(data);
       },
       error: (error) => {
-        // Handle errors
         console.error('Error fetching data in component:', error);
       },
     });
