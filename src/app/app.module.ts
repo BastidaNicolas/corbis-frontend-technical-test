@@ -26,8 +26,8 @@ import { TableComponent } from './components/table/table.component';
     MainSectionComponent,
     TableComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, NgbModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
+  imports: [BrowserModule, AppRoutingModule, NgbModule, HttpClientModule],
 })
 export class AppModule {}

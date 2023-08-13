@@ -1,8 +1,12 @@
-<div class="flex-fill" style="padding: 30px 34.77px 61.5px 20px">
-  <div class="d-flex" style="margin-bottom: 30px;">
+<div class="flex-fill" style="min-height: 100vh; padding: 30px 34.77px 61.5px 20px">
+  <div class="d-flex" style="margin-bottom: 30px">
     <div class="btn-group">
-      <span class="btn btn-highlight-dark" style="padding: 6.34px 8.32px 3.44px 9.21px;" ><i class="bi bi-plus-lg"></i></span>
-      <button type="button" class="btn btn-highlight" style="padding: 5.97px 11.37px 7.03px 11.58px;">Add New KPI</button>
+      <span class="btn btn-highlight-dark" style="padding: 6.34px 8.32px 3.44px 9.21px"
+        ><i class="bi bi-plus-lg"></i
+      ></span>
+      <button type="button" class="btn btn-highlight" style="padding: 5.97px 11.37px 7.03px 11.58px">
+        Add New KPI
+      </button>
       <button
         type="button"
         class="btn btn-highlight dropdown-toggle dropdown-toggle-split"
@@ -19,11 +23,12 @@
         <li><a class="dropdown-item" href="#">Separated link</a></li>
       </ul>
     </div>
-    <div class="position-relative search-container" >
-        <input class="form-control" type="text" placeholder="Search">
-        <span class="position-absolute search-button">
-            <i class="bi bi-search"></i>
-          </span>
+    <div class="position-relative search-container">
+      <input class="form-control" type="text" placeholder="Search" />
+      <span class="position-absolute search-button">
+        <i class="bi bi-search"></i>
+      </span>
     </div>
   </div>
+  <app-table [perspectives]="perspectives" [objectives]="objectives"></app-table>
 </div>

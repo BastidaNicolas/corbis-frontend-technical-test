@@ -8,7 +8,7 @@ import { ApiService } from 'src/app/api.service';
 })
 export class MainSectionComponent {
   objectives = [];
-  perspectives= [];
+  perspectives = [];
 
   constructor(private apiService: ApiService) {}
 
@@ -20,7 +20,7 @@ export class MainSectionComponent {
     this.apiService.getObjectives().subscribe({
       next: (data) => {
         this.objectives = data;
-        console.log("getObjectives", data);
+        console.log('getObjectives', data);
       },
       error: (error) => {
         console.error('Error fetching data in component:', error);
@@ -29,7 +29,7 @@ export class MainSectionComponent {
     this.apiService.getPerspectives().subscribe({
       next: (data) => {
         this.perspectives = data;
-        console.log("getPerspectives", data);
+        console.log('getPerspectives', data);
       },
       error: (error) => {
         console.error('Error fetching data in component:', error);

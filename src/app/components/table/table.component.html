@@ -1,1 +1,73 @@
-<p>table works!</p>
+<div style="min-height: 607px; box-shadow: 0px 3px 6px #0000004d; border: 1px solid #cccccc; background-color: white">
+  <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+    <li [ngbNavItem]="1">
+      <button ngbNavLink class="table-tab border-start-0">Perspectives</button>
+      <ng-template ngbNavContent>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col" sortable="area">Perspective</th>
+              <th scope="col " sortable="area">icon</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let perspective of perspectives">
+              <td>
+                <p>{{ perspective.name }}</p>
+              </td>
+              <td>here goes icon</td>
+            </tr>
+          </tbody>
+        </table>
+      </ng-template>
+    </li>
+    <li [ngbNavItem]="2">
+      <button ngbNavLink>Objetives</button>
+      <ng-template ngbNavContent>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col" sortable="area">OBJECTIVE</th>
+              <th scope="col" sortable="area">PERSPECTIVE</th>
+              <th scope="col" sortable="area">OWNER</th>
+              <th scope="col" sortable="area">DESCRIPTION</th>
+              <th scope="col " sortable="area">icon</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let objective of objectives">
+              <td>
+                <p>{{ objective.name }}</p>
+              </td>
+              <td>
+                <p>{{ objective.perspective.name }}</p>
+              </td>
+              <td>
+                <p>{{ objective.code }}</p>
+              </td>
+              <td>
+                <p>{{ objective.description }}</p>
+              </td>
+              <td>here goes icon</td>
+            </tr>
+          </tbody>
+        </table>
+      </ng-template>
+    </li>
+    <li [ngbNavItem]="3" [disabled]="true">
+      <button ngbNavLink>KPIs</button>
+      <ng-template ngbNavContent>
+        <p>
+          Sed commodo, leo at suscipit dictum, quam est porttitor sapien, eget sodales nibh elit id diam. Nulla
+          facilisi. Donec egestas ligula vitae odio interdum aliquet. Duis lectus turpis, luctus eget tincidunt eu,
+          congue et odio. Duis pharetra et nisl at faucibus. Quisque luctus pulvinar arcu, et molestie lectus ultrices
+          et. Sed diam urna, egestas ut ipsum vel, volutpat volutpat neque. Praesent fringilla tortor arcu. Vivamus
+          faucibus nisl enim, nec tristique ipsum euismod facilisis. Morbi ut bibendum est, eu tincidunt odio. Orci
+          varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris aliquet odio ac lorem
+          aliquet ultricies in eget neque. Phasellus nec tortor vel tellus pulvinar feugiat.
+        </p>
+      </ng-template>
+    </li>
+  </ul>
+  <div [ngbNavOutlet]="nav" class="" style="margin: 19px 14px"></div>
+</div>
