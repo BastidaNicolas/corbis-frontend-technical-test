@@ -31,21 +31,21 @@ input[type="text"], textarea {
     border:1px solid #ccc !important;
 }
 .custom-scrollbar {
-    &::-webkit-scrollbar {
-        width: 5px;
+      &::-webkit-scrollbar {
+        width: 11px;
       }
-      
       &::-webkit-scrollbar-track {
-        background: transparent; /* Remove the background color */
+        background: transparent;
       }
       
       &::-webkit-scrollbar-thumb {
-        background-color: #4C4743; /* Color of the thumb */
-        border-radius: 5px; /* Rounded border for the thumb */
+        border: 3px solid white;
+        background-color: #4C4743; 
+        border-radius: 11px;
       }
       
       &::-webkit-scrollbar-thumb:hover {
-        background-color: #333; /* Color when hovering over the thumb */
+        background-color: #333;
       }
 }
 .table-striped tbody tr:nth-of-type(odd) {
