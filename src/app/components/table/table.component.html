@@ -1,5 +1,5 @@
 <div
-  style="box-shadow: 0px 3px 6px #0000004d; border: 1px solid #cccccc; background-color: white; padding-bottom: 34px"
+  class="table-container"
 >
   <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
     <li [ngbNavItem]="1">
@@ -11,13 +11,13 @@
               <th scope="col" sortable="area">
                 <div class="d-flex align-items-center justify-content-between">
                   <div class="">PERSPECTIVE</div>
-                  <div class="d-flex flex-column" style="padding-bottom: 13px">
-                    <i class="bi bi-caret-up-fill" style="width: 8.22px; height: 4.7px; margin-bottom: 1.5px"></i
-                    ><i class="bi bi-caret-down-fill" style="width: 8.22px; height: 4.7px"></i>
+                  <div class="d-flex flex-column org-icon-container">
+                    <i class="bi bi-caret-up-fill"></i
+                    ><i class="bi bi-caret-down-fill"></i>
                   </div>
                 </div>
               </th>
-              <th class="lastCol text-center px-0" style="width: 5.25%" scope="col no-border" sortable="area">
+              <th class="lastCol text-center px-0" scope="col no-border" sortable="area">
                 <i class="bi bi-three-dots-vertical"></i>
               </th>
             </tr>
@@ -27,8 +27,8 @@
               <td>
                 <p>{{ perspective.name }}</p>
               </td>
-              <td class="text-center" style="padding: 9px 0">
-                <button class="btn border rounded-0" style="padding: 0 3px; font-size: 14px">
+              <td class="text-center dots-col">
+                <button class="btn border rounded-0">
                   <i class="bi bi-three-dots"></i>
                 </button>
               </td>
@@ -43,43 +43,43 @@
         <table class="table table-striped">
           <thead>
             <tr>
-              <th class="fistCol" [style.width.%]="isDrawerOpen ? 20.38 : 25" scope="col" sortable="area">
+              <th [style.width.%]="isDrawerOpen ? 20.38 : 25" scope="col" sortable="area">
                 <div class="d-flex align-items-center justify-content-between">
                   <div class="">OBJECTIVE</div>
-                  <div class="d-flex flex-column" style="padding-bottom: 13px">
-                    <i class="bi bi-caret-up-fill" style="width: 8.22px; height: 4.7px; margin-bottom: 1.5px"></i
-                    ><i class="bi bi-caret-down-fill" style="width: 8.22px; height: 4.7px"></i>
+                  <div class="d-flex flex-column org-icon-container">
+                    <i class="bi bi-caret-up-fill"></i
+                    ><i class="bi bi-caret-down-fill"></i>
                   </div>
                 </div>
               </th>
               <th class="fistCol" [style.width.%]="isDrawerOpen ? 20.63 : 18.75" scope="col" sortable="area">
                 <div class="d-flex align-items-center justify-content-between">
                   <div class="">PERSPECTIVE</div>
-                  <div class="d-flex flex-column" style="padding-bottom: 13px">
-                    <i class="bi bi-caret-up-fill" style="width: 8.22px; height: 4.7px; margin-bottom: 1.5px"></i
-                    ><i class="bi bi-caret-down-fill" style="width: 8.22px; height: 4.7px"></i>
+                  <div class="d-flex flex-column org-icon-container">
+                    <i class="bi bi-caret-up-fill"></i
+                    ><i class="bi bi-caret-down-fill"></i>
                   </div>
                 </div>
               </th>
               <th class="fistCol" [style.width.%]="isDrawerOpen ? 12.78 : 35.42" scope="col" sortable="area">
                 <div class="d-flex align-items-center justify-content-between">
                   <div class="">OWNER</div>
-                  <div class="d-flex flex-column" style="padding-bottom: 13px">
-                    <i class="bi bi-caret-up-fill" style="width: 8.22px; height: 4.7px; margin-bottom: 1.5px"></i
-                    ><i class="bi bi-caret-down-fill" style="width: 8.22px; height: 4.7px"></i>
+                  <div class="d-flex flex-column org-icon-container">
+                    <i class="bi bi-caret-up-fill"></i
+                    ><i class="bi bi-caret-down-fill"></i>
                   </div>
                 </div>
               </th>
               <th class="fistCol" [style.width.%]="isDrawerOpen ? 15.03 : 22.05" scope="col" sortable="area">
                 <div class="d-flex align-items-center justify-content-between">
                   <div class="">DESCRIPTION</div>
-                  <div class="d-flex flex-column" style="padding-bottom: 13px">
-                    <i class="bi bi-caret-up-fill" style="width: 8.22px; height: 4.7px; margin-bottom: 1.5px"></i
-                    ><i class="bi bi-caret-down-fill" style="width: 8.22px; height: 4.7px"></i>
+                  <div class="d-flex flex-column org-icon-container">
+                    <i class="bi bi-caret-up-fill"></i
+                    ><i class="bi bi-caret-down-fill"></i>
                   </div>
                 </div>
               </th>
-              <th class="lastCol text-center px-0" style="width: 5.25%" scope="col no-border" sortable="area">
+              <th class="lastCol text-center px-0" scope="col no-border" sortable="area">
                 <i class="bi bi-three-dots-vertical"></i>
               </th>
             </tr>
@@ -98,8 +98,8 @@
               <td>
                 <p class="custom-truncate">{{ objective.description }}</p>
               </td>
-              <td class="text-center" style="padding: 9px 0">
-                <button class="btn border rounded-0" style="padding: 0 3px; font-size: 14px">
+              <td class="text-center dots-col" >
+                <button class="btn border rounded-0">
                   <i class="bi bi-three-dots"></i>
                 </button>
               </td>
@@ -112,7 +112,7 @@
       <button ngbNavLink>KPIs</button>
     </li>
   </ul>
-  <div [ngbNavOutlet]="nav" class="" style="margin: 19px 14px 30px 14px"></div>
+  <div [ngbNavOutlet]="nav" class="nav-outlet"></div>
   <ngb-pagination
     class="my-pagination"
     [collectionSize]="150"

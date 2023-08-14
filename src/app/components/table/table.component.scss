@@ -1,5 +1,19 @@
 @import "../../../variables.scss";
-
+.table-container{
+    box-shadow: 0px 3px 6px #0000004d; 
+    border: 1px solid #cccccc; 
+    background-color: white; 
+    padding-bottom: 34px;
+}
+.org-icon-container{
+    padding-bottom: 13px;
+    .bi-caret-up-fill{
+        margin-bottom: 1.5px;
+    }
+    i{
+        width: 8.22px; height: 4.7px;
+    }
+}
 .nav-tabs{
     background-color: $lightGray;
     li{
@@ -21,13 +35,8 @@
 }
 .table{
     table-layout: fixed;
-    .fistCol{
-        max-width: 262.36px !important;
-        min-width: 170.36px !important;
-    }
     .lastCol{
-        max-width: 51.6px !important;
-        min-width: 51.6px !important;
+        width: 5.25%;
     }
     th{
         font-size: 12px;
@@ -55,6 +64,12 @@
         padding: 12px 0 11px 24px; 
         &:first-child{
             padding-left: 31.72px;
+        }
+    }
+    .dots-col{
+        padding: 9px 0;
+        button{
+            padding: 0 3px; font-size: 14px
         }
     }
 }
@@ -96,6 +111,9 @@
             margin-left: 3px;
         }
     }
+}
+.nav-outlet{
+    margin: 19px 14px 30px 14px;
 }
 
 /* Add custom styles to control truncation */
