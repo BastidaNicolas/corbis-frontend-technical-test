@@ -22,8 +22,8 @@
 
 ## Note
 - Make sure you have Node.js and Angular CLI installed on your system before following these steps. If not, you can install them from the official websites:
-- [Node.js](https://nodejs.org/)
-- [Angular CLI](https://angular.io/cli)
+    - [Node.js](https://nodejs.org/)
+    - [Angular CLI](https://angular.io/cli)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.8.
 
