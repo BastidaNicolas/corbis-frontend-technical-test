@@ -62,7 +62,7 @@
 .my-pagination::ng-deep{ 
     ul{
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
         margin-bottom: 0;
         padding: 0px 14px;
         .page-item a{
@@ -78,7 +78,6 @@
             }
         }
         .page-item.active .page-link {
-            z-index: 1;
             color: #FFFFFF;
             background-color:$orange !important;
             border-color: $orange;

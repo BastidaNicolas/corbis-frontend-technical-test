@@ -44,7 +44,7 @@
             <tr>
               <th
                 class="fistCol"
-                style="width: 25%; min-width: 20.38%;"
+                [style.width.%]="isDrawerOpen ? 20.38 : 25"
                 scope="col"
                 sortable="area"
               >
@@ -55,7 +55,7 @@
                 </div>
             </div>
               </th>
-              <th class="fistCol" style="width: 18.75%; min-width: 20.63%" scope="col" sortable="area">
+              <th class="fistCol" [style.width.%]="isDrawerOpen ? 20.63 : 18.75" scope="col" sortable="area">
                 <div class="d-flex align-items-center justify-content-between">
                     <div class="">PERSPECTIVE</div>
                     <div class="d-flex flex-column " style="padding-bottom: 13px;">
@@ -63,7 +63,7 @@
                     </div>
                 </div>
             </th>
-              <th class="fistCol" style="width: 35.42%; min-width: 12.78%" scope="col" sortable="area">
+              <th class="fistCol" [style.width.%]="isDrawerOpen ? 12.78 : 35.42" scope="col" sortable="area">
                 
                 <div class="d-flex align-items-center justify-content-between">
                     <div class="">OWNER</div>
@@ -72,7 +72,7 @@
                     </div>
                 </div>
             </th>
-              <th class="fistCol" style="width: 22.05%; min-width: 15.03%" scope="col" sortable="area">
+              <th class="fistCol" [style.width.%]="isDrawerOpen ? 15.03 : 22.05" scope="col" sortable="area">
                 <div class="d-flex align-items-center justify-content-between">
                     <div class="">DESCRIPTION</div>
                     <div class="d-flex flex-column" style="padding-bottom: 13px;">

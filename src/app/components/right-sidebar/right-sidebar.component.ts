@@ -1,12 +1,13 @@
-import { Component } from '@angular/core';
-import { ApiService } from 'src/app/api.service';
+import { Component, OnInit } from '@angular/core';
+import { ApiService } from 'src/app/services/api/api.service'; 
+import { OpenDrawerService } from 'src/app/services/open-drawer/open-drawer.service';
 
 @Component({
   selector: 'app-right-sidebar',
   templateUrl: './right-sidebar.component.html',
   styleUrls: ['./right-sidebar.component.scss'],
 })
-export class RightSidebarComponent {
+export class RightSidebarComponent implements OnInit{
   comments = [];
   openDrawer = false;
 
@@ -19,7 +20,7 @@ export class RightSidebarComponent {
     };
   }
 
-  constructor(private apiService: ApiService) {}
+  constructor(private apiService: ApiService, private openDrawerService: OpenDrawerService) {}
 
   ngOnInit(): void {
     this.fetchData();
@@ -34,9 +35,12 @@ export class RightSidebarComponent {
         console.error('Error fetching data in component:', error);
       },
     });
+    this.openDrawerService.isDrawerOpen$.subscribe((isOpen) => {
+      this.openDrawer = isOpen;
+    });
   }
 
   toggleDrawer() {
-    this.openDrawer = !this.openDrawer;
+    this.openDrawerService.toggleDrawer();
   }
 }

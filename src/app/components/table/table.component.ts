@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { OpenDrawerService } from 'src/app/services/open-drawer/open-drawer.service';
 
 interface Perspectives {
   id: number;
@@ -18,9 +19,18 @@ interface Objectives {
   templateUrl: './table.component.html',
   styleUrls: ['./table.component.scss'],
 })
-export class TableComponent {
+export class TableComponent implements OnInit{
   @Input() perspectives: Perspectives[] = [];
   @Input() objectives: Objectives[] = [];
+  isDrawerOpen: boolean = false;
   active = 1;
   page = 15;
+
+  constructor(private openDrawerService: OpenDrawerService) {}
+
+  ngOnInit() {
+    this.openDrawerService.isDrawerOpen$.subscribe((isOpen) => {
+      this.isDrawerOpen = isOpen;
+    });
+  }
 }
