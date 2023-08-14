@@ -3,12 +3,11 @@
 header{
     z-index: 10;
 }
-.mb-5{
-    margin-bottom: 5px
-}
 .first-container{
     padding: 0.5625rem 1.875rem 0 1.3125rem;
-
+    .mb-5{
+        margin-bottom: 5px!important;
+    }
     button{
         border: none;
         padding: 3px 11.34px 3px 11.34px;
