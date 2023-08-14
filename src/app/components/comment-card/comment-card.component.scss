@@ -1,42 +1,46 @@
 @import "../../../variables.scss";
 
-.card-container{
-    padding: 17px 20px 19px 20px; min-width: 367.25px;
-    .mb-13{
-        margin-bottom: 13px
-    }
-    .image{
-        width: 30px; 
-        height: 30px; 
-        margin-right: 12px
-    }
-    .name-text{
-        margin-left: -5px;
-        font-size: 12px; 
-        line-height: 17px; 
-        font-weight: bold
-    }
-    .date-text{
-        font-size: 11px; 
-        line-height: 15px
-    }
-    .comment-text{
-        font-size: 12px; 
-        line-height: 17px; 
-        margin-bottom: 7px; 
-        white-space: normal;
-    }
-    .first-button-type{
-        font-size: 12px; 
-        line-height: 17px; 
-        font-weight: bold
-    }
-    .second-button-type{
-        font-size: 14px; 
-        line-height: 17px; 
-        font-weight: bold
-    }
+.card-container {
+  padding: 1.063rem 1.25rem 1.188rem 1.25rem;
+  min-width: 22.953rem;
+  
+  .mb-13 {
+    margin-bottom: 0.813rem;
+  }
+
+  .image {
+    width: 1.875rem;
+    height: 1.875rem;
+    margin-right: 0.75rem;
+  }
+
+  .name-text {
+    margin-left: -0.313rem;
+    font-size: 0.75rem;
+    line-height: 1.063rem;
+    font-weight: bold;
+  }
+
+  .date-text {
+    font-size: 0.688rem;
+    line-height: 0.938rem;
+  }
+
+  .comment-text {
+    font-size: 0.75rem;
+    line-height: 1.063rem;
+    margin-bottom: 0.438rem;
+    white-space: normal;
+  }
+
+  .first-button-type,
+  .second-button-type {
+    font-size: 0.75rem;
+    line-height: 1.063rem;
+    font-weight: bold;
+  }
 }
-.hover-background{
-    background-color: $lightGray4;
+
+.hover-background {
+  background-color: $lightGray4;
 }

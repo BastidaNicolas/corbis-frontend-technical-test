@@ -1,29 +1,33 @@
 @import '../../../variables.scss';
 
-.drawer-container{
-    height: calc(100vh - 131.5px); 
-    top: 130.39px; 
-    transition: all 0.5s; 
-    overflow-x: hidden; 
-    white-space: pre;
-    .comment-form{
-        padding: 23px 20px 9.8px 20px; 
-        min-width: 367.25px;
-        .mb-108{
-            margin-bottom: 10.8px
-        }
-        input{
-            padding: 6.78px 0 6.22px 14.67px;
-            font-size: 12px;
-            line-height: 17px;
-            font-style: italic;
-        }
-        button{
-            font-size: 13px;
-            line-height: 18px;
-            color: $darkGray;
-            padding: 8.34px 16.5px 7.66px 16.5px;
-            border-color: $lightGray3;
-        }
+.drawer-container {
+  height: calc(100vh - 8.219rem);
+  top: 8.18rem;
+  transition: all 0.5s;
+  overflow-x: hidden;
+  white-space: pre;
+
+  .comment-form {
+    padding: 1.438rem 1.25rem 0.609rem 1.25rem;
+    min-width: 22.953rem;
+
+    .mb-108 {
+      margin-bottom: 0.675rem;
     }
+
+    input {
+      padding: 0.42375rem 0 0.38875rem 0.91625rem;
+      font-size: 0.75rem;
+      line-height: 1.063rem;
+      font-style: italic;
+    }
+
+    button {
+      font-size: 0.8125rem;
+      line-height: 1.125rem;
+      color: $darkGray;
+      padding: 0.52125rem 1.03125rem 0.47875rem 1.03125rem;
+      border-color: $lightGray3;
+    }
+  }
 }

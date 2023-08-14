@@ -1,56 +1,68 @@
 @import '../../../../variables.scss';
 
-.section-container{
-    min-height: calc(100vh - 128px); 
-    padding: 30px 34.77px 61.5px 20px;
+.section-container {
+  min-height: calc(100vh - 8rem);
+  padding: 1.875rem 2.17375rem 3.84375rem 1.25rem;
 }
-.mb-30{
-    margin-bottom: 30px;
+
+.mb-30 {
+  margin-bottom: 1.875rem;
 }
-.button-icon{
-    padding: 6.34px 8.32px 3.44px 9.21px;
+
+.button-icon {
+  padding: 0.39625rem 0.52rem 0.215rem 0.57625rem;
 }
-.button-text{
-    padding: 5.97px 11.37px 7.03px 11.58px;
+
+.button-text {
+  padding: 0.373125rem 0.710625rem 0.439375rem 0.72375rem;
 }
-.btn-group{
-    margin-right: 15px;
-    .btn{
-        color: $white;
-        border-radius: 0;
-        font-size: 11px;
-        line-height: 15px;
+
+.btn-group {
+  margin-right: 0.9375rem;
+
+  .btn {
+    color: $white;
+    border-radius: 0;
+    font-size: 0.6875rem;
+    line-height: 0.9375rem;
+  }
+
+  .dropdown-toggle {
+    padding: 0.3125rem 0.52rem 0 0.52rem;
+    
+    &::after {
+      font-size: 1.125rem;
     }
-    .dropdown-toggle{
-        padding: 5px 8.28px 0 8.28px;
-        &::after{
-            font-size: 18px;
-        }
+  }
+
+  i {
+    &::before {
+      -webkit-text-stroke: 0.09375rem;
     }
-    i{
-        &::before{
-            -webkit-text-stroke: 1.5px;
-        }
-    }
+  }
 }
-.search-container{
-    color: $lightGray2;
-    transition: color 0.2s;
+
+.search-container {
+  color: $lightGray2;
+  transition: color 0.2s;
+  width: 100%;
+  max-width: 12.9375rem;
+
+  .search-button {
+    font-size: 0.9375rem;
+    right: 0.50625rem;
+    top: 0.21875rem;
+  }
+
+  input {
+    font-size: 0.75rem;
+    line-height: 1.0625rem;
+    padding: 0.375rem 0 0.3125rem 0.875125rem;
+    border-radius: 0;
     width: 100%;
-    max-width: 207px;
-    .search-button{
-        font-size: 15px;
-        right: 8.1px;
-        top: 3.5px;
-    }
-    input{
-        font-size: 12px;
-        line-height: 17px;
-        padding: 6px 0px 5px 14.02px;
-        border-radius: 0;
-        width: 100%;
-    }
-    &:focus-within{
-        color: $darkBrown;
-    }
+  }
+
+  &:focus-within {
+    color: $darkBrown;
+  }
 }

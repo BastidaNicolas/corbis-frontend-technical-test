@@ -1,122 +1,146 @@
 @import '../../../variables.scss';
 
-header{
-    z-index: 10;
+header {
+  z-index: 10;
 }
-.first-container{
-    padding: 0.5625rem 1.875rem 0 1.3125rem;
-    .mb-5{
-        margin-bottom: 5px!important;
-    }
-    button{
-        border: none;
-        padding: 3px 11.34px 3px 11.34px;
-        color: $lightGray9;
-        i::before{
-            width: 17px;
-            height: 17px;
-            -webkit-text-stroke: .5px;
-        }
-    }
-    .profile-dropdown{
-        margin-left: 16.41px;
-        margin-right: 32.31px;
-        .profile-img{
-            height: 31px;
-            width: 32px;
-            margin-right: 7.13px;
-        }
-        .profile-name{
-            font-size: 16px;
-            line-height: 22px;
-            margin-right: 6.16px;
-        }
-        .down-arrow{
-            font-size: 11px;
-        }
-    }
-}
-.second-container{
-    padding: 15px 20px;
-    box-shadow: 0px 6px 6px #00000024;
 
-    .random-square{
-        background-color: $lightGray12;
-        width: 30px;
-        height: 30px;
-        margin-right: 17.78px;
-    }
-}
-h2{
-    font-size: 22px;
-    line-height: 30px;
-    font-weight: bold;
-}
-.input-group{
-    max-width: 335.23px;
+.first-container {
+  padding: 0.5625rem 1.875rem 0 1.3125rem;
+
+  .mb-5 {
+    margin-bottom: 0.3125rem!important;
+  }
+
+  button {
+    border: none;
+    padding: 0.1875rem 0.709375rem 0.1875rem 0.709375rem;
     color: $lightGray9;
-    transition: color .2s;
-    span{
-        z-index: 10;
-        i{
-            width: 15px;
-            height: 15px;
-        }
+
+    i::before {
+      width: 1.0625rem;
+      height: 1.0625rem;
+      -webkit-text-stroke: 0.03125rem;
     }
-    .search-button{
-        right: 20px;
-        top: 3.5px;
+  }
+
+  .profile-dropdown {
+    margin-left: 1.025625rem;
+    margin-right: 2.019375rem;
+
+    .profile-img {
+      height: 1.9375rem;
+      width: 2rem;
+      margin-right: 0.445625rem;
     }
-    .down-arrow{
-        left: 8px;
-        top: 2.5px;
+
+    .profile-name {
+      font-size: 1rem;
+      line-height: 1.375rem;
+      margin-right: 0.385rem;
     }
-    &:focus-within{
-        color: $darkBrown;
+
+    .down-arrow {
+      font-size: 0.6875rem;
     }
+  }
 }
-input{
-    font-size: 12px;
-    border-radius: 0;
-    line-height: 17px;
-    color: #BEBEBE;
-    padding: 0px 0px 1px 31.14px;
-    margin-right: 10.41px;
-    max-width: 335.23px;
+
+.second-container {
+  padding: 0.9375rem 1.25rem;
+  box-shadow: 0px 0.375rem 0.375rem #00000024;
+
+  .random-square {
+    background-color: $lightGray12;
+    width: 1.875rem;
+    height: 1.875rem;
+    margin-right: 1.11125rem;
+  }
 }
+
+h2 {
+  font-size: 1.375rem;
+  line-height: 1.875rem;
+  font-weight: bold;
+}
+
+.input-group {
+  max-width: 20.952188rem;
+  color: $lightGray9;
+  transition: color 0.2s;
+
+  span {
+    z-index: 10;
+    i {
+      width: 0.9375rem;
+      height: 0.9375rem;
+    }
+  }
+
+  .search-button {
+    right: 1.25rem;
+    top: 0.21875rem;
+  }
+
+  .down-arrow {
+    left: 0.5rem;
+    top: 0.15625rem;
+  }
+
+  &:focus-within {
+    color: $darkBrown;
+  }
+}
+
+input {
+  font-size: 0.75rem;
+  border-radius: 0;
+  line-height: 1.063rem;
+  color: #BEBEBE;
+  padding: 0px 0px 0.0625rem 1.946875rem;
+  margin-right: 0.651875rem;
+  max-width: 20.952188rem;
+}
+
 .triangle {
-    margin-left: 95%;
-    z-index: 6;
+  margin-left: 5.9375rem;
+  z-index: 6;
 }
+
 .searchicon {
-    margin-left: -95%;
-    z-index: 5;
+  margin-left: -5.9375rem;
+  z-index: 5;
 }
-i{
-    scale: .8;
+
+i {
+  transform: scale(0.8);
 }
-ul{
-    font-size: 12px;
-    line-height: 17px;
+
+ul {
+  font-size: 0.75rem;
+  line-height: 1.063rem;
 }
-.nav-tabs{
-    .arrow-icon{
-        padding-top: 0.5px;
-        padding-left: 3px;
-        width: auto;
-        height: 13px;
-    }
-    .breadcrumb-item{
-        padding: 5.4px 0 3px 0;
-        display: flex;
-        align-items: center;
-        color: $darkBrown;
-    }
-    .nav-link{
-        padding: 5.4px 20px 3.6px 20px ;
-        color: $darkBrown;
-    }
-    .active{
-        background-color: $lightGray;
-    }
+
+.nav-tabs {
+  .arrow-icon {
+    padding-top: 0.03125rem;
+    padding-left: 0.1875rem;
+    width: auto;
+    height: 0.8125rem;
+  }
+
+  .breadcrumb-item {
+    padding: 0.3375rem 0 0.1875rem 0;
+    display: flex;
+    align-items: center;
+    color: $darkBrown;
+  }
+
+  .nav-link {
+    padding: 0.3375rem 1.25rem 0.225rem 1.25rem;
+    color: $darkBrown;
+  }
+
+  .active {
+    background-color: $lightGray;
+  }
 }
