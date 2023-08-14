@@ -27,7 +27,7 @@ export class CommentCardComponent {
   showReplies = false;
   datePipe = new DatePipe('en-US');
   originalDate: string = '';
-  formattedDate = this.datePipe.transform(this.originalDate, 'MMM. d, yyyy, h:mm a'); // This will hold the formatted date
+  formattedDate = this.datePipe.transform(this.originalDate, 'MMM. d, yyyy, h:mm a');
 
   ngOnInit(): void {
     this.originalDate = this.comment.date;
