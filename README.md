@@ -1,14 +1,31 @@
 # CorbisFrontendTechnicalTest
+![Screenshot from 2023-08-14 19-35-09](https://github.com/BastidaNicolas/corbis-frontend-technical-test/assets/74965310/d94924d1-3c87-4957-9a38-2ca76b0d540e)
+
+# Angular Project Setup Guide
+
+## Cloning the Repository
+1. Clone the repository to your local machine using the following command:
+   `git clone <repository_link>`
+2. Navigate to the project directory:
+   `cd <project_folder_name>`
+   
+## Installation and Running
+1. Install project dependencies using npm:
+   `npm install`
+2. Run the development server:
+   `ng serve`
+3. Open your browser and go to `http://localhost:4200/` to see your app in action.
+
+## Quick Access (Deployment)
+- If you're not interested in setting up the project locally, you can access the deployed version directly:
+🚀 [corbis-test.netlify.app](https://corbis-test.netlify.app/)
+
+## Note
+- Make sure you have Node.js and Angular CLI installed on your system before following these steps. If not, you can install them from the official websites:
+- [Node.js](https://nodejs.org/)
+- [Angular CLI](https://angular.io/cli)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.8.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 
