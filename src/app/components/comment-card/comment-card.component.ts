@@ -23,6 +23,8 @@ interface Reply {
 export class CommentCardComponent {
   @Input()
   comment!: CommentData;
+  showButtons = false;
+  showReplies = false;
   datePipe = new DatePipe('en-US');
   originalDate: string = '';
   formattedDate = this.datePipe.transform(this.originalDate, 'MMM. d, yyyy, h:mm a'); // This will hold the formatted date
@@ -30,5 +32,9 @@ export class CommentCardComponent {
   ngOnInit(): void {
     this.originalDate = this.comment.date;
     this.formattedDate = this.datePipe.transform(this.originalDate, 'MMM. d, yyyy, h:mm a');
+  }
+
+  setShowReplies():void{
+    this.showReplies = !this.showReplies;
   }
 }
