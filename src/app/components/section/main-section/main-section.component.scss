@@ -1,5 +1,18 @@
 @import '../../../../variables.scss';
 
+.section-container{
+    min-height: calc(100vh - 128px); 
+    padding: 30px 34.77px 61.5px 20px;
+}
+.mb-30{
+    margin-bottom: 30px;
+}
+.button-icon{
+    padding: 6.34px 8.32px 3.44px 9.21px;
+}
+.button-text{
+    padding: 5.97px 11.37px 7.03px 11.58px;
+}
 .btn-group{
     margin-right: 15px;
     .btn{
