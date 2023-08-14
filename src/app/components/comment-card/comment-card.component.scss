@@ -33,9 +33,13 @@
     white-space: normal;
   }
 
-  .first-button-type,
-  .second-button-type {
+  .first-button-type{
     font-size: 0.75rem;
+    line-height: 1.063rem;
+    font-weight: bold;
+  }
+  .second-button-type {
+    font-size: 0.9rem;
     line-height: 1.063rem;
     font-weight: bold;
   }
