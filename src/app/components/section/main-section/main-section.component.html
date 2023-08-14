@@ -24,11 +24,11 @@
       </ul>
     </div>
     <div class="position-relative search-container">
-      <input class="form-control" type="text" placeholder="Search" />
+      <input class="form-control" type="text" placeholder="Search" [(ngModel)]="searchText"/>
       <span class="position-absolute search-button">
         <i class="bi bi-search"></i>
       </span>
     </div>
   </div>
-  <app-table [perspectives]="perspectives" [objectives]="objectives"></app-table>
+  <app-table [perspectives]="perspectives" [objectives]="objectives" [searchValue]="searchText"></app-table>
 </div>

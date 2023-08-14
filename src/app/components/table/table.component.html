@@ -23,7 +23,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr *ngFor="let perspective of perspectives">
+            <tr *ngFor="let perspective of perspectives | searchPipe: searchValue">
               <td>
                 <p>{{ perspective.name }}</p>
               </td>
@@ -85,7 +85,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr *ngFor="let objective of objectives">
+            <tr *ngFor="let objective of objectives | searchPipe: searchValue">
               <td>
                 <p class="custom-truncate text-highlight">{{ objective.code }} {{ objective.name }}</p>
               </td>

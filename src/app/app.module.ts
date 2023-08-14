@@ -13,6 +13,8 @@ import { ReplyCardComponent } from './components/reply-card/reply-card.component
 import { HttpClientModule } from '@angular/common/http';
 import { MainSectionComponent } from './components/section/main-section/main-section.component';
 import { TableComponent } from './components/table/table.component';
+import { FormsModule } from '@angular/forms';
+import { SearchPipePipe } from './pipes/search-pipe.pipe';
 
 @NgModule({
   declarations: [
@@ -25,9 +27,10 @@ import { TableComponent } from './components/table/table.component';
     ReplyCardComponent,
     MainSectionComponent,
     TableComponent,
+    SearchPipePipe,
   ],
   providers: [],
   bootstrap: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, NgbModule, HttpClientModule],
+  imports: [BrowserModule, AppRoutingModule, NgbModule, HttpClientModule, FormsModule],
 })
 export class AppModule {}
