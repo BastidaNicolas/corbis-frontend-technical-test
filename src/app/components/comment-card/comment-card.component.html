@@ -1,52 +1,40 @@
-<div style="padding: 17px 20px 19px 20px; min-width: 367.25px;"  [ngStyle]="{'background-color': showButtons ? '#F5F5F5' : 'transparent'}" (mouseenter)="showButtons = true"
-(mouseleave)="showButtons = false" >
-  <div class="d-flex align-items-start" style="margin-bottom: 13px">
-    <img style="width: 30px; height: 30px; margin-right: 12px" src="assets/avatar.jpg" alt="image" />
+<div
+  class="card-container"
+  [class.hover-background]="showButtons"
+  (mouseenter)="showButtons = true"
+  (mouseleave)="showButtons = false"
+>
+  <div class="d-flex align-items-start mb-13">
+    <img class="image" src="assets/avatar.jpg" alt="image" />
     <div class="flex-column flex-fill">
-      <div class="text-darkBrown" style="margin-left: -5px;font-size: 12px; line-height: 17px; font-weight: bold">
+      <div class="text-darkBrown name-text">
         {{ comment.author }}
       </div>
-      <div style="font-size: 11px; line-height: 15px">{{ formattedDate }}</div>
+      <div class="date-text">{{ formattedDate }}</div>
     </div>
-    <button class="btn p-0 text-darkBrown border-0" style="font-size: 12px; line-height: 17px; font-weight: bold" [hidden]="!showButtons">
-      Resolve
-    </button>
+    <button class="btn p-0 text-darkBrown border-0 first-button-type" [hidden]="!showButtons">Resolve</button>
   </div>
-  <p class="text-darkBrown" style="font-size: 12px; line-height: 17px; margin-bottom: 7px; white-space: normal">
+  <p class="text-darkBrown comment-text">
     {{ comment.comment }}
   </p>
   <div class="d-flex align-items-center">
     <div class="flex-fill">
-    <button
-      class="btn p-0 text-darkBrown"
-      style="font-size: 12px; line-height: 17px; font-weight: bold"
-      *ngIf="!comment.replies?.length"
-    >
-      Reply
-    </button>
-    <button
-      class="btn p-0 text-darkBrown border-0"
-      style="font-size: 12px; line-height: 17px; font-weight: bold"
-      *ngIf="comment.replies?.length"
-      (click)="setShowReplies()"
-
-    >
-      > {{ comment.replies.length }} Reply
-    </button>
-  </div>
-    <div [hidden]="!showButtons">
+      <button class="btn p-0 text-darkBrown first-button-type" *ngIf="!comment.replies?.length">Reply</button>
       <button
-      class="btn p-0 text-darkBrown border-0 me-3"
-      style="font-size: 12px; line-height: 17px; font-weight: bold"
-    >
-    <i class="bi bi-pencil-fill"></i>
-  </button>
-  <button
-      class="btn p-0 text-darkBrown border-0"
-      style="font-size: 14px; line-height: 17px; font-weight: bold"
-    >
-    <i class="bi bi-trash"></i>
-  </button>
+        class="btn p-0 text-darkBrown border-0 first-button-type"
+        *ngIf="comment.replies?.length"
+        (click)="setShowReplies()"
+      >
+        > {{ comment.replies.length }} Reply
+      </button>
+    </div>
+    <div [hidden]="!showButtons">
+      <button class="btn p-0 text-darkBrown border-0 me-3 first-button-type">
+        <i class="bi bi-pencil-fill"></i>
+      </button>
+      <button class="btn p-0 text-darkBrown border-0 second-button-type">
+        <i class="bi bi-trash"></i>
+      </button>
     </div>
   </div>
 </div>

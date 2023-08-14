@@ -34,7 +34,7 @@ export class CommentCardComponent {
     this.formattedDate = this.datePipe.transform(this.originalDate, 'MMM. d, yyyy, h:mm a');
   }
 
-  setShowReplies():void{
+  setShowReplies(): void {
     this.showReplies = !this.showReplies;
   }
 }

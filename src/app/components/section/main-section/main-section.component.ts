@@ -12,7 +12,7 @@ interface Objective {
 }
 
 interface Perspective {
-  id:number;
+  id: number;
   name: string;
 }
 
@@ -22,13 +22,12 @@ interface Perspective {
   styleUrls: ['./main-section.component.scss'],
 })
 export class MainSectionComponent {
-  objectives:Objective[]=[];
-  perspectives:Perspective[] = [];
-  searchText:string = "";
-  selectedTab = "perspectives";
+  objectives: Objective[] = [];
+  perspectives: Perspective[] = [];
+  searchText: string = '';
+  selectedTab = 'perspectives';
 
-  constructor(private apiService: ApiService) {
-  }
+  constructor(private apiService: ApiService) {}
 
   ngOnInit(): void {
     this.fetchData();

@@ -1,7 +1,7 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'searchPipe'
+  name: 'searchPipe',
 })
 export class SearchPipePipe implements PipeTransform {
   transform(items: any[], searchTerm: string) {
@@ -9,8 +9,8 @@ export class SearchPipePipe implements PipeTransform {
       return items;
     }
     const term = searchTerm.toLowerCase();
-    
-    return items.filter(item => {
+
+    return items.filter((item) => {
       for (const prop in item) {
         if (item[prop]?.toString().toLowerCase().includes(term)) {
           return true;

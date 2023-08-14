@@ -22,7 +22,7 @@ interface Objectives {
 export class TableComponent implements OnInit {
   @Input() perspectives: Perspectives[] = [];
   @Input() objectives: Objectives[] = [];
-  @Input() searchValue: string = "";
+  @Input() searchValue: string = '';
   isDrawerOpen: boolean = false;
   active = 1;
   page = 15;
