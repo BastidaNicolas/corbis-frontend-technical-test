@@ -7,6 +7,7 @@ interface Perspectives {
 interface Objectives {
   id: number;
   code: string;
+  owner: string;
   name: string;
   description: string;
   perspective: Perspectives;
@@ -21,4 +22,5 @@ export class TableComponent {
   @Input() perspectives: Perspectives[] = [];
   @Input() objectives: Objectives[] = [];
   active = 1;
+  page = 15;
 }

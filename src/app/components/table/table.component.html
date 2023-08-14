@@ -1,4 +1,6 @@
-<div style="min-height: 607px; box-shadow: 0px 3px 6px #0000004d; border: 1px solid #cccccc; background-color: white">
+<div
+  style="box-shadow: 0px 3px 6px #0000004d; border: 1px solid #cccccc; background-color: white; padding-bottom: 34px"
+>
   <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
     <li [ngbNavItem]="1">
       <button ngbNavLink class="table-tab border-start-0">Perspectives</button>
@@ -6,8 +8,17 @@
         <table class="table table-striped">
           <thead>
             <tr>
-              <th scope="col" sortable="area">Perspective</th>
-              <th scope="col " sortable="area">icon</th>
+              <th scope="col" sortable="area">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="">PERSPECTIVE</div>
+                    <div class="d-flex flex-column" style="padding-bottom: 13px;">
+                      <i class="bi bi-caret-up-fill" style="width: 8.22px;height: 4.7px;margin-bottom: 1.5px;"></i><i class="bi bi-caret-down-fill" style="width: 8.22px;height: 4.7px;"></i>
+                    </div>
+                </div>
+            </th>
+              <th class="lastCol text-center px-0" style="width: 5.25%" scope="col no-border" sortable="area">
+                <i class="bi bi-three-dots-vertical"></i>
+              </th>
             </tr>
           </thead>
           <tbody>
@@ -15,7 +26,11 @@
               <td>
                 <p>{{ perspective.name }}</p>
               </td>
-              <td>here goes icon</td>
+              <td class="text-center" style="padding: 9px 0">
+                <button class="btn border rounded-0" style="padding: 0 3px; font-size: 14px">
+                  <i class="bi bi-three-dots"></i>
+                </button>
+              </td>
             </tr>
           </tbody>
         </table>
@@ -27,28 +42,68 @@
         <table class="table table-striped">
           <thead>
             <tr>
-              <th scope="col" sortable="area">OBJECTIVE</th>
-              <th scope="col" sortable="area">PERSPECTIVE</th>
-              <th scope="col" sortable="area">OWNER</th>
-              <th scope="col" sortable="area">DESCRIPTION</th>
-              <th scope="col " sortable="area">icon</th>
+              <th
+                class="fistCol"
+                style="width: 25%; min-width: 20.38%;"
+                scope="col"
+                sortable="area"
+              >
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="">OBJECTIVE</div>
+                <div class="d-flex flex-column " style="padding-bottom: 13px;">
+                  <i class="bi bi-caret-up-fill" style="width: 8.22px;height: 4.7px;margin-bottom: 1.5px;"></i><i class="bi bi-caret-down-fill" style="width: 8.22px;height: 4.7px;"></i>
+                </div>
+            </div>
+              </th>
+              <th class="fistCol" style="width: 18.75%; min-width: 20.63%" scope="col" sortable="area">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="">PERSPECTIVE</div>
+                    <div class="d-flex flex-column " style="padding-bottom: 13px;">
+                      <i class="bi bi-caret-up-fill" style="width: 8.22px;height: 4.7px;margin-bottom: 1.5px;"></i><i class="bi bi-caret-down-fill" style="width: 8.22px;height: 4.7px;"></i>
+                    </div>
+                </div>
+            </th>
+              <th class="fistCol" style="width: 35.42%; min-width: 12.78%" scope="col" sortable="area">
+                
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="">OWNER</div>
+                    <div class="d-flex flex-column" style="padding-bottom: 13px;">
+                      <i class="bi bi-caret-up-fill" style="width: 8.22px;height: 4.7px;margin-bottom: 1.5px;"></i><i class="bi bi-caret-down-fill" style="width: 8.22px;height: 4.7px;"></i>
+                    </div>
+                </div>
+            </th>
+              <th class="fistCol" style="width: 22.05%; min-width: 15.03%" scope="col" sortable="area">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="">DESCRIPTION</div>
+                    <div class="d-flex flex-column" style="padding-bottom: 13px;">
+                      <i class="bi bi-caret-up-fill" style="width: 8.22px;height: 4.7px;margin-bottom: 1.5px;"></i><i class="bi bi-caret-down-fill" style="width: 8.22px;height: 4.7px;"></i>
+                    </div>
+                </div>
+            </th>
+              <th class="lastCol text-center px-0" style="width: 5.25%" scope="col no-border" sortable="area">
+                <i class="bi bi-three-dots-vertical"></i>
+              </th>
             </tr>
           </thead>
           <tbody>
             <tr *ngFor="let objective of objectives">
               <td>
-                <p>{{ objective.name }}</p>
+                <p class="custom-truncate text-highlight">{{ objective.code }} {{ objective.name }}</p>
               </td>
               <td>
-                <p>{{ objective.perspective.name }}</p>
+                <p class="custom-truncate">{{ objective.perspective.name }}</p>
               </td>
               <td>
-                <p>{{ objective.code }}</p>
+                <p class="custom-truncate">{{ objective.owner }}</p>
               </td>
               <td>
-                <p>{{ objective.description }}</p>
+                <p class="custom-truncate">{{ objective.description }}</p>
               </td>
-              <td>here goes icon</td>
+              <td class="text-center" style="padding: 9px 0">
+                <button class="btn border rounded-0" style="padding: 0 3px; font-size: 14px">
+                  <i class="bi bi-three-dots"></i>
+                </button>
+              </td>
             </tr>
           </tbody>
         </table>
@@ -69,5 +124,15 @@
       </ng-template>
     </li>
   </ul>
-  <div [ngbNavOutlet]="nav" class="" style="margin: 19px 14px"></div>
+  <div [ngbNavOutlet]="nav" class="" style="margin: 19px 14px 30px 14px"></div>
+  <ngb-pagination
+    class="my-pagination"
+    [collectionSize]="150"
+    [maxSize]="3"
+    [(page)]="page"
+    aria-label="Custom pagination"
+  >
+    <ng-template ngbPaginationPrevious><i class="bi bi-chevron-left"></i> Previous</ng-template>
+    <ng-template ngbPaginationNext>Next <i class="bi bi-chevron-right"></i></ng-template>
+  </ngb-pagination>
 </div>

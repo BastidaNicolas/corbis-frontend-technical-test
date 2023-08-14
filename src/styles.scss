@@ -48,6 +48,9 @@ input[type="text"], textarea {
         background-color: #333; /* Color when hovering over the thumb */
       }
 }
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: $lightGray10;
+}
 /* Importing Bootstrap SCSS file. */
 @import "~bootstrap-icons/font/bootstrap-icons.css";
 @import 'bootstrap/scss/bootstrap';

@@ -19,3 +19,91 @@
         background-color: $white;
     }
 }
+.table{
+    table-layout: fixed;
+    .fistCol{
+        max-width: 262.36px !important;
+        min-width: 170.36px !important;
+    }
+    .lastCol{
+        max-width: 51.6px !important;
+        min-width: 51.6px !important;
+    }
+    th{
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 17px;
+        color: $darkGray2;
+        padding: 18.5px 16.32px 17px 16.32px;
+        border: none;
+        border-right: 1px solid $lightGray2;
+        border-bottom: 1px solid $lightGray2;
+        &:first-child{
+            padding-left: 31.72px;
+        }
+        &:last-child {
+            border-right: none;
+        }
+    }
+    td{
+        p{
+            margin: 0;
+        }
+        font-size: 12px;
+        line-height: 17px;
+        color: $darkBrown;
+        padding: 12px 0 11px 24px; 
+        &:first-child{
+            padding-left: 31.72px;
+        }
+    }
+}
+
+.my-pagination::ng-deep{ 
+    ul{
+        display: flex;
+        justify-content: end;
+        margin-bottom: 0;
+        padding: 0px 14px;
+        .page-item a{
+            border-radius: 0;
+            font-size: 12px;
+            line-height: 17px;
+            padding: 6.62px 11.4px 5.38px 11.8px;
+        }
+        .page-link {
+            color: $orange;
+            &:focus{
+                box-shadow: 0 0 0 0.25rem rgba($orange, 0.3);
+            }
+        }
+        .page-item.active .page-link {
+            z-index: 1;
+            color: #FFFFFF;
+            background-color:$orange !important;
+            border-color: $orange;
+        }
+        .page-item.disabled .page-link {
+            background-color: $white;
+            color: $darkBrown;
+        }
+        i{
+            font-size: 11px;
+        }
+        .bi-chevron-left{
+            margin-right: 3px;
+        }
+        .bi-chevron-right{
+            margin-left: 3px;
+        }
+    }
+}
+
+/* Add custom styles to control truncation */
+.custom-truncate {
+    max-width: 100%; /* Adjust the max width as needed */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
