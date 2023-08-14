@@ -1,4 +1,4 @@
-# CorbisFrontendTechnicalTest
+# Corbis Front-end Test
 ![Screenshot from 2023-08-14 19-35-09](https://github.com/BastidaNicolas/corbis-frontend-technical-test/assets/74965310/d94924d1-3c87-4957-9a38-2ca76b0d540e)
 
 # Angular Project Setup Guide
