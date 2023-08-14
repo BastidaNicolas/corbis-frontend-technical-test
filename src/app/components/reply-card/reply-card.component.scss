@@ -1,0 +1,27 @@
+.reply-card-container{
+    padding: 17px 20px 19px 40px; 
+    min-width: 367.25px;
+    .mb-13{
+        margin-bottom: 13px;
+    }
+    .image{
+        width: 30px; 
+        height: 30px; 
+        margin-right: 12px;
+    }
+    .name-text{
+        font-size: 12px; 
+        line-height: 17px; 
+        font-weight: bold;
+    }
+    .date-text{
+        font-size: 11px; 
+        line-height: 15px;
+    }
+    .comment-text{
+        font-size: 12px; 
+        line-height: 17px; 
+        margin-bottom: 7px; 
+        white-space: normal;
+    }
+}
