@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from 'src/app/services/api/api.service'; 
+import { ApiService } from 'src/app/services/api/api.service';
 import { OpenDrawerService } from 'src/app/services/open-drawer/open-drawer.service';
 
 @Component({
@@ -7,7 +7,7 @@ import { OpenDrawerService } from 'src/app/services/open-drawer/open-drawer.serv
   templateUrl: './right-sidebar.component.html',
   styleUrls: ['./right-sidebar.component.scss'],
 })
-export class RightSidebarComponent implements OnInit{
+export class RightSidebarComponent implements OnInit {
   comments = [];
   openDrawer = false;
 
@@ -20,7 +20,10 @@ export class RightSidebarComponent implements OnInit{
     };
   }
 
-  constructor(private apiService: ApiService, private openDrawerService: OpenDrawerService) {}
+  constructor(
+    private apiService: ApiService,
+    private openDrawerService: OpenDrawerService
+  ) {}
 
   ngOnInit(): void {
     this.fetchData();

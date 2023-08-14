@@ -19,7 +19,7 @@ interface Objectives {
   templateUrl: './table.component.html',
   styleUrls: ['./table.component.scss'],
 })
-export class TableComponent implements OnInit{
+export class TableComponent implements OnInit {
   @Input() perspectives: Perspectives[] = [];
   @Input() objectives: Objectives[] = [];
   isDrawerOpen: boolean = false;
